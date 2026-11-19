@@ -12,6 +12,7 @@ import { MongoServerError } from "mongodb";
 
 @Injectable()
 export class alunosService {
+  static create: any;
   constructor(
     @InjectModel(Aluno.name) private alunoModel: Model<AlunoDoc>,
   ) {}
